@@ -1,0 +1,22 @@
+@tailwind base;
+@tailwind components;
+@tailwind utilities;
+
+body::-webkit-scrollbar {
+    display: none;
+}
+
+body {
+    background-color: #23272f;
+}
+
+.hide-scroll::-webkit-scrollbar {
+    display: none;
+}
+
+@media only screen and (min-width: 768px) {
+    .home:nth-child(even) .content:last-child {
+        display: grid;
+        order: -1;
+    }
+}
